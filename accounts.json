@@ -1,0 +1,48 @@
+{
+  "1001": {
+    "name": "Alice",
+    "pin": "1234",
+    "balance": 123458289.0,
+    "daily_withdrawn": 0.0,
+    "withdraw_date": "2025-08-13",
+    "transactions": [
+      {
+        "time": "2025-08-13 20:52:23",
+        "type": "deposit",
+        "amount": 123456789.0,
+        "balance": 123458289.0,
+        "meta": ""
+      },
+      {
+        "time": "2025-08-13 20:52:30",
+        "type": "deposit",
+        "amount": 123456789.0,
+        "balance": 246915078.0,
+        "meta": ""
+      },
+      {
+        "time": "2025-08-13 20:52:43",
+        "type": "transfer_out",
+        "amount": 123456789.0,
+        "balance": 123458289.0,
+        "meta": "to 1002"
+      }
+    ]
+  },
+  "1002": {
+    "name": "Bob",
+    "pin": "4321",
+    "balance": 123457589.0,
+    "daily_withdrawn": 0.0,
+    "withdraw_date": "2025-08-13",
+    "transactions": [
+      {
+        "time": "2025-08-13 20:52:43",
+        "type": "transfer_in",
+        "amount": 123456789.0,
+        "balance": 123457589.0,
+        "meta": "from 1001"
+      }
+    ]
+  }
+}
